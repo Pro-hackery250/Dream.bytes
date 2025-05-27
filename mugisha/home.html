@@ -3,11 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Dream.Bytes | Portifolio</title>
     <link rel="stylesheet" href="home.css">
+    <link rel="icon" href="images/titlelogo.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
-<body>
+<div class="custom-cursor"></div>
+<body id="intro">
     <div class="spinner" id="spinner">
         <div class="lava-lamp">
             <div class="bubble"></div>
@@ -17,32 +19,73 @@
             <div class="bubble4"></div>
         </div>
     </div>
-    <div class="navbar">
+    <div class="background">
+        <div class="bub"></div>
+        <div class="bub"></div>
+        <div class="bub"></div>
+        <div class="bub"></div>
+        <div class="bub"></div>
+    </div>
+    <div class="notifications">
+        <h3>Bytes Tips</h3>
+        <p>Byte tips section is coming soon <a href="comingsoon.html">Click here</a> <span>for more info</span></p>
+    </div>
+    <div class="settings">
+        <div class="setting">
+            <h3>Settings <i class="fa fa-times" id="close2"></i></h3>
+            <div class="lines">
+                <div class="line"></div>
+                <div class="tile">Mode</div>
+                <div class="line"></div>
+            </div>
+            <div class="modes">
+                <div class="mode">
+                    <div class="textm">
+                        <div class="icon2"><i class="fas fa-thermometer"></i></div>
+                        <div class="modetext">
+                            <h4>Choose your mode</h4>
+                            <p>change colors that appear in my portifolio</p>
+                        </div>
+                    </div>
+                    <div class="selectmode">
+                        <div class="icon4"><i class="fas fa-angle-down"></i></div>
+                        <div class="option">
+                            <li class="light"><a href="#">Light</a></li>
+                            <li class="dark"><a href="#">Dark</a></li>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="navbar" id="nav">
         <ul>
             <div class="logo"><a href="#"><img src="images/my logo1.png" alt=""></a></div>
-            <div class="menu">
-                <li class="links active"><a href="#">Home</a></li>
-                <li class="links"><a href="#">Services</a></li>
-                <li class="links"><a href="#">Blog</a></li>
+            <div class="menu" id="menu">
+                <li class="links active"><a href="#home">Home</a></li>
+                <li class="links"><a href="#service">Work</a></li>
+                <li class="links"><a href="#blog">Blog</a></li>
                 <li class="links"><a href="#">contact</a></li>
             </div>
-            <div class="menu-icon" id="menu-icon"><i class="fas fa-bars-staggered"></i></div>
+            <div class="menu-icon" id="menu-icon">
+                <i class="fas fa-bars-staggered" onclick="togglebar()" id="open"></i>
+                <i class="fas fa-times" onclick="untogglebar()" id="close"></i>
+            </div>
             <div class="info">
-                <h3>MG</h3>
+                <h3 style="display: flex; align-items: center; gap: 0.4em;" id="select">MG <i class="fas fa-angle-down"></i></h3>
                 <div class="pic"><img src="images/IMG-20241225-WA0021.jpg" alt=""></div>
             </div>
         </ul>
     </div>
     <div class="all">
-    <div class="intro">
+    <div class="intro box" id="home">
         <div class="category">
             <li class="items active" id="Me"><a>It's ME</a></li>
             <li class="items" id="review"><a>Reviews</a></li>
             <li class="items" id="about"><a>About me</a></li>
         </div>
     </div>
-    <div class="container">
-
+    <div class="container box">
         <div class="me" id="me">
         <div class="word2">
             <h3>It's <span>Dream</span>.<span>Bytes</span></h3>
@@ -63,6 +106,7 @@
             </div>
         </div>
         <div class="photo">
+            <div class="in">
             <div class="img" id="default2">
                 <img src="images/20241225_135120.jpg" alt="">
             </div>
@@ -72,6 +116,7 @@
             <div class="infobox">
                 <h4>Mugisha gloire</h4>
                 <p>Full stack Developer</p>
+            </div>
             </div>
             <div class="icons">
                 <div class="icon"><i class="fab fa-github"></i></div>
@@ -87,39 +132,270 @@
             </div> 
         </div>
     </div>
-    <div class="plans">
+    <div class="selects" id="selection">
+        <div class="select">My portifolio</div>
+        <div class="select set"><a href="#">Settings</a></div>
+    </div>
+    <div class="plans boxy">
         <div class="plan">
-            <div class="name">
-                <div class="img"><img src="images/20241225_135120.jpg" alt=""></div>
-                <div class="point"></div>
-            </div>
-            <div class="in">
-                <h3>BrainFox</h3>
-                <p>Tech.Rw</p>
-            </div>
+            <div class="skill"><img src="skills/JS Logo - Javascript SDK - PNG Logo Vector Brand Downloads (SVG, EPS).jpg" alt=""></div>
+            <h2>70%</h2>
         </div>
         <div class="plan">
-            <div class="name">
-                <div class="img"><img src="images/20241225_135120.jpg" alt=""></div>
-                <div class="point"></div>
-            </div>
-            <div class="in">
-                <h3>BrainFox</h3>
-                <p>Tech.Rw</p>
-            </div>
+            <div class="skill"><img src="skills/Canva logo vector.jpg" alt=""></div>
+            <h2>80%</h2>
         </div>
         <div class="plan">
-            <div class="name">
-                <div class="img"><img src="images/20241225_135120.jpg" alt=""></div>
-                <div class="point"></div>
-            </div>
-            <div class="in">
-                <h3>BrainFox</h3>
-                <p>Tech.Rw</p>
-            </div>
+            <div class="skill"><img src="skills/CapCut Apks.jpg" alt=""></div>
+            <h2>90%</h2>
+        </div>
+        <div class="plan">
+            <div class="skill"><img src="skills/CSS 3 Logo PNG Vector (SVG) Free Download.jpg" alt=""></div>
+            <h2>85%</h2>
+        </div>
+        <div class="plan">
+            <div class="skill"><img src="skills/Discover the World’s Best Professional Designers for Unmatched Creativity.jpg" alt=""></div>
+            <h2>50%</h2>
+        </div>
+        <div class="plan">
+            <div class="skill"><img src="skills/Html 5 free icons designed by Freepik.jpg" alt=""></div>
+            <h2>92%</h2>
         </div>
     </div>
+    <section class="service box" id="service">
+        <div class="heading">
+            <h3>Let us talk about my <span>Work</span></h3>
+            <a href="#">See more</a>
+        </div>
+        <div class="services">
+            <div class="left arrow"><i class="fas fa-arrow-left-long"></i></div>
+            <div class="serv">
+                <div class="serv2">
+                    <img src="work/05464693268fd1a5c3f82dc7c27c7467.jpg" alt="">
+                    <div class="text-info">
+                        <div class="btn4">
+                            <a href="#">Live preview <i class="fas fa-lightbulb"></i></a>
+                            <a href="#">source cod on <i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="serv2">
+                    <img src="work/1789c0a05ceb10df1a53ac28765aec03.jpg" alt="">
+                    <div class="text-info"></div>
+                </div>
+            </div>
+            <div class="right arrow"><i class="fas fa-arrow-right"></i></div>
+        </div>
+    </section>
+    <section class="blog boxy" id="blog">
+        <div class="heading">
+            <h4>From my <span>Blog</span> post</h4>
+            <a id="view">view more</a>
+        </div>
+        <div class="blogs">
+            <div class="blo">
+                <div class="images"><img src="work/1789c0a05ceb10df1a53ac28765aec03.jpg" alt=""></div>
+                <div class="lives">
+                    <div class="live"><i class="fas fa-arrow-right-long"></i></div>
+                </div>
+                <div class="badge">UI/UX DESIGN</div>
+                <h3>Design inraveled: Behind the scenes of ui/ux design</h3>
+                <div class="time">
+                    <div class="list">
+                        <li></li> <h4>jenny smith</h4>
+                    </div>
+                    <div class="list">
+                        <li></li> <h4>22 july 2023</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="blo">
+                <div class="images"><img src="work/1789c0a05ceb10df1a53ac28765aec03.jpg" alt=""></div>
+                <div class="lives">
+                    <div class="live"><i class="fas fa-arrow-right-long"></i></div>
+                </div>
+                <div class="badge">Web Design</div>
+                <h3>Design inraveled: Behind the scenes of ui/ux design</h3>
+                <div class="time">
+                    <div class="list">
+                        <li></li> <h4>Aime Pro</h4>
+                    </div>
+                    <div class="list">
+                        <li></li> <h4>10 May 2025</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="blo">
+                <div class="images"><img src="images/IMG-20241225-WA0021.jpg" alt=""></div>
+                <div class="lives">
+                    <div class="live"><i class="fas fa-arrow-right-long"></i></div>
+                </div>
+                <div class="badge">UI/UX DESIGN</div>
+                <h3>Design inraveled: Behind the scenes of ui/ux design</h3>
+                <div class="time">
+                    <div class="list">
+                        <li></li> <h4>jenny smith</h4>
+                    </div>
+                    <div class="list">
+                        <li></li> <h4>22 july 2023</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="blogs" id="hide">
+            <div class="blo">
+                <div class="images"><img src="work/1789c0a05ceb10df1a53ac28765aec03.jpg" alt=""></div>
+                <div class="lives">
+                    <div class="live"><i class="fas fa-arrow-right-long"></i></div>
+                </div>
+                <div class="badge">UI/UX DESIGN</div>
+                <h3>Design inraveled: Behind the scenes of ui/ux design</h3>
+                <div class="time">
+                    <div class="list">
+                        <li></li> <h4>jenny smith</h4>
+                    </div>
+                    <div class="list">
+                        <li></li> <h4>22 july 2023</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="blo">
+                <div class="images"><img src="work/1789c0a05ceb10df1a53ac28765aec03.jpg" alt=""></div>
+                <div class="lives">
+                    <div class="live"><i class="fas fa-arrow-right-long"></i></div>
+                </div>
+                <div class="badge">UI/UX DESIGN</div>
+                <h3>Design inraveled: Behind the scenes of ui/ux design</h3>
+                <div class="time">
+                    <div class="list">
+                        <li></li> <h4>jenny smith</h4>
+                    </div>
+                    <div class="list">
+                        <li></li> <h4>22 july 2023</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="blo">
+                <div class="images"><img src="images/IMG-20241225-WA0021.jpg" alt=""></div>
+                <div class="lives">
+                    <div class="live"><i class="fas fa-arrow-right-long"></i></div>
+                </div>
+                <div class="badge">UI/UX DESIGN</div>
+                <h3>Design inraveled: Behind the scenes of ui/ux design</h3>
+                <div class="time">
+                    <div class="list">
+                        <li></li> <h4>jenny smith</h4>
+                    </div>
+                    <div class="list">
+                        <li></li> <h4>22 july 2023</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contact box" id="contact">
+        <div class="title">Have an awesome project idea? <br> <span>Let's discuss</span></div>
+        <div class="search">
+            <div class="icony"><i class="fas fa-envelope"></i></div>
+            <input type="email" name="email" id="email" placeholder="Enter your Email">
+            <button type="submit">Book call</button>
+        </div>
+        <div class="rates">
+            <div class="rate">
+                <i class="fas fa-check"></i>
+                <h4>4.9/5 Average ratings</h4>
+            </div>
+            <div class="rate">
+                <i class="fas fa-check"></i>
+                <h4>+10 winning awards</h4>
+            </div>
+            <div class="rate">
+                <i class="fas fa-check"></i>
+                <h4>Certified Product owner</h4>
+            </div>
+        </div>
+        <div class="designs">
+            <div class="design2">
+                <div class="tap">
+                    <i class="fas fa-asterisk"></i>
+                    <h4>Web Design</h4>
+                </div>
+                <div class="tap">
+                    <i class="fas fa-asterisk"></i>
+                    <h4>App Design</h4>
+                </div>
+                <div class="tap">
+                    <i class="fas fa-asterisk"></i>
+                    <h4>Dashboard</h4>
+                </div>
+                <div class="tap">
+                    <i class="fas fa-asterisk"></i>
+                    <h4>Wireframe</h4>
+                </div>
+                <div class="tap">
+                    <i class="fas fa-asterisk"></i>
+                    <h4>User researcher</h4>
+                </div>
+            </div>
+        </div>
+    </section>
     </div>
+    <footer>
+        <div class="background2"><h1 class="write"></h1></div>
+        <div class="footer">
+            <div class="footer1">
+              <div class="mage">
+                <img src="images/titlelogo.png" alt="">
+                <h4>Dream.bytes</h4>
+              </div>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae expedita, obcaecati molestias harum nihil facere, animi quis ipsa autem atque exercitationem delectus excepturi, aspernatur .</p>
+              <div class="socials">
+                <div class="social">
+                    <div class="subtitle">Pinterest</div>
+                    <i class="fab fa-pinterest"></i>
+                </div>
+                <div class="social">
+                    <div class="subtitle">Instagram</div>
+                    <i class="fab fa-instagram"></i>
+                </div>
+                <div class="social">
+                    <div class="subtitle">Facebook</div>
+                    <i class="fab fa-facebook-f"></i>
+                </div>
+                <div class="social">
+                    <div class="subtitle">Youtube</div>
+                    <i class="fab fa-youtube"></i>
+                </div>
+              </div>
+            </div>
+            <div class="footer2">
+                <h3><span>Navigation</span></h3>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">My Work</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Blog</a></li>
+            </div>
+            <div class="footer2 second">
+                <h3><span>Contact</span></h3>
+                <li><a href="#">+(250) 791-486-601</a></li>
+                <li><a href="#">Dreambytes50@gmail.com</a></li>
+                <li><a href="#">progrmmergloire.netlify.app</a></li>
+            </div>
+        </div>
+        <div class="ending">
+            <div class="copy">
+                <h3>&copy; Copyrights2025 <span>.</span> All rights reserved</h3>
+            </div>
+            <div class="copy">
+                <h3>Deisgned by <span>DGL TEAM.inc</span></h3>
+            </div>
+            <div class="flag">
+                Location:
+                <img src="images/flag.png" alt="">
+            </div>
+        </div>
+    </footer>
     <script src="home.js"></script>
 </body>
 </html>
