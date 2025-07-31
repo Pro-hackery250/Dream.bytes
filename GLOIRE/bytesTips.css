@@ -1,0 +1,772 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    transition: .5s ease;   
+   user-select: none;
+}
+
+body::selection{
+    background: none;
+}
+
+
+body{
+  font-family: var(--font2);
+  cursor: auto;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+body{
+  background-color: var(--secodary-color);
+}
+.darkmode{
+  background-color: #333;
+}
+
+body::-webkit-scrollbar{
+  width: .50rem;
+  height: 30rem;
+}
+body::-webkit-scrollbar-thumb{
+  background: linear-gradient(90deg, #5c67ff, #ad51ff);
+  border-radius: 10px;
+}
+body::-webkit-scrollbar-track{
+  background: linear-gradient(10deg, #ffffff, #ffffff);
+}
+
+:root{
+    --font1: "Roboto", sans-serif;
+    --font2: "Poppins", sans-serif;
+    --primary-color: #f3b74e;
+    --secodary-color: rgb(246, 231, 210);
+    --real-color: rgb(36, 99, 193);
+    --size1: 1.5rem;
+    --size2: 2.1rem;
+}
+img{
+  max-width: 100%;
+}
+span{
+  color: var(--real-color);
+}
+.custom-cursor{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  background-color: #ec34a5bb;
+  border-radius: 50%;
+  pointer-events: none;
+  transform: translate(-50%, -50%) rotate(135deg);
+  transition: top 0.05s , left 0.05s;
+  z-index: 9999;
+}
+
+.container::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+  
+    background-image: radial-gradient(
+      ellipse 1.5px 2px at 1.5px 50%,
+      #0000 0,
+      #0000 90%,
+      #000 100%
+    );
+    background-size: 25px 8px;
+  }
+  
+  .container{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    --c: rgb(0, 224, 206);
+    background-color: #000;
+    background-image: radial-gradient(4px 100px at 0px 235px, var(--c), #0000),
+      radial-gradient(4px 100px at 300px 235px, var(--c), #0000),
+      radial-gradient(1.5px 1.5px at 150px 117.5px, var(--c) 100%, #0000 150%),
+      radial-gradient(4px 100px at 0px 252px, var(--c), #0000),
+      radial-gradient(4px 100px at 300px 252px, var(--c), #0000),
+      radial-gradient(1.5px 1.5px at 150px 126px, var(--c) 100%, #0000 150%),
+      radial-gradient(4px 100px at 0px 150px, var(--c), #0000),
+      radial-gradient(4px 100px at 300px 150px, var(--c), #0000),
+      radial-gradient(1.5px 1.5px at 150px 75px, var(--c) 100%, #0000 150%),
+      radial-gradient(4px 100px at 0px 253px, var(--c), #0000),
+      radial-gradient(4px 100px at 300px 253px, var(--c), #0000),
+      radial-gradient(1.5px 1.5px at 150px 126.5px, var(--c) 100%, #0000 150%),
+      radial-gradient(4px 100px at 0px 204px, var(--c), #0000),
+      radial-gradient(4px 100px at 300px 204px, var(--c), #0000),
+      radial-gradient(1.5px 1.5px at 150px 102px, var(--c) 100%, #0000 150%),
+      radial-gradient(4px 100px at 0px 134px, var(--c), #0000),
+      radial-gradient(4px 100px at 300px 134px, var(--c), #0000),
+      radial-gradient(1.5px 1.5px at 150px 67px, var(--c) 100%, #0000 150%),
+      radial-gradient(4px 100px at 0px 179px, var(--c), #0000),
+      radial-gradient(4px 100px at 300px 179px, var(--c), #0000),
+      radial-gradient(1.5px 1.5px at 150px 89.5px, var(--c) 100%, #0000 150%),
+      radial-gradient(4px 100px at 0px 299px, var(--c), #0000),
+      radial-gradient(4px 100px at 300px 299px, var(--c), #0000),
+      radial-gradient(1.5px 1.5px at 150px 149.5px, var(--c) 100%, #0000 150%),
+      radial-gradient(4px 100px at 0px 215px, var(--c), #0000),
+      radial-gradient(4px 100px at 300px 215px, var(--c), #0000),
+      radial-gradient(1.5px 1.5px at 150px 107.5px, var(--c) 100%, #0000 150%),
+      radial-gradient(4px 100px at 0px 281px, var(--c), #0000),
+      radial-gradient(4px 100px at 300px 281px, var(--c), #0000),
+      radial-gradient(1.5px 1.5px at 150px 140.5px, var(--c) 100%, #0000 150%),
+      radial-gradient(4px 100px at 0px 158px, var(--c), #0000),
+      radial-gradient(4px 100px at 300px 158px, var(--c), #0000),
+      radial-gradient(1.5px 1.5px at 150px 79px, var(--c) 100%, #0000 150%),
+      radial-gradient(4px 100px at 0px 210px, var(--c), #0000),
+      radial-gradient(4px 100px at 300px 210px, var(--c), #0000),
+      radial-gradient(1.5px 1.5px at 150px 105px, var(--c) 100%, #0000 150%);
+    background-size:
+      300px 235px,
+      300px 235px,
+      300px 235px,
+      300px 252px,
+      300px 252px,
+      300px 252px,
+      300px 150px,
+      300px 150px,
+      300px 150px,
+      300px 253px,
+      300px 253px,
+      300px 253px,
+      300px 204px,
+      300px 204px,
+      300px 204px,
+      300px 134px,
+      300px 134px,
+      300px 134px,
+      300px 179px,
+      300px 179px,
+      300px 179px,
+      300px 299px,
+      300px 299px,
+      300px 299px,
+      300px 215px,
+      300px 215px,
+      300px 215px,
+      300px 281px,
+      300px 281px,
+      300px 281px,
+      300px 158px,
+      300px 158px,
+      300px 158px,
+      300px 210px,
+      300px 210px,
+      300px 210px;
+    animation: hi 150s linear infinite;
+  }
+  
+  @keyframes hi {
+    0% {
+      background-position:
+        0px 220px,
+        3px 220px,
+        151.5px 337.5px,
+        25px 24px,
+        28px 24px,
+        176.5px 150px,
+        50px 16px,
+        53px 16px,
+        201.5px 91px,
+        75px 224px,
+        78px 224px,
+        226.5px 350.5px,
+        100px 19px,
+        103px 19px,
+        251.5px 121px,
+        125px 120px,
+        128px 120px,
+        276.5px 187px,
+        150px 31px,
+        153px 31px,
+        301.5px 120.5px,
+        175px 235px,
+        178px 235px,
+        326.5px 384.5px,
+        200px 121px,
+        203px 121px,
+        351.5px 228.5px,
+        225px 224px,
+        228px 224px,
+        376.5px 364.5px,
+        250px 26px,
+        253px 26px,
+        401.5px 105px,
+        275px 75px,
+        278px 75px,
+        426.5px 180px;
+    }
+  
+    to {
+      background-position:
+        0px 6800px,
+        3px 6800px,
+        151.5px 6917.5px,
+        25px 13632px,
+        28px 13632px,
+        176.5px 13758px,
+        50px 5416px,
+        53px 5416px,
+        201.5px 5491px,
+        75px 17175px,
+        78px 17175px,
+        226.5px 17301.5px,
+        100px 5119px,
+        103px 5119px,
+        251.5px 5221px,
+        125px 8428px,
+        128px 8428px,
+        276.5px 8495px,
+        150px 9876px,
+        153px 9876px,
+        301.5px 9965.5px,
+        175px 13391px,
+        178px 13391px,
+        326.5px 13540.5px,
+        200px 14741px,
+        203px 14741px,
+        351.5px 14848.5px,
+        225px 18770px,
+        228px 18770px,
+        376.5px 18910.5px,
+        250px 5082px,
+        253px 5082px,
+        401.5px 5161px,
+        275px 6375px,
+        278px 6375px,
+        426.5px 6480px;
+    }
+  }
+
+
+
+  .all{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    backdrop-filter: blur(3px);
+    padding: 20px 20px;
+    z-index: 2;
+  }
+
+
+  
+.background{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+    background: linear-gradient(120deg, #f7f2e6,#ffffff);
+  }
+  
+  .background .bub{
+    position: absolute;
+    bottom: -100px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    animation: float 20s infinite ease-in;
+  }
+  
+  .bub:nth-child(1){
+    left: 20%;
+    animation-delay: 0s;
+    width: 30px;
+    height: 30px;
+    background-color: var(--real-color);
+  }
+  .bub:nth-child(2){
+    left: 40%;
+    animation-delay: 4s;
+    background-color: var(--secodary-color);
+  }
+  .bub:nth-child(3){
+    left: 60%;
+    animation-delay: 2s;
+    background-color: orangered;
+  }
+  .bub:nth-child(4){
+    left: 80%;
+    animation-delay: 6s;
+    background-color: #00f;
+  }
+  .bub:nth-child(5){
+    left: 90%;
+    animation-delay: 1s;
+    width: 25px;
+    height: 25px;
+    background-color: #04befe;
+  }
+  
+  @keyframes float {
+    0%{
+      transform: translateY(0) scale(1);
+      opacity: 1;
+    }
+  
+    100%{
+      transform: translateY(-1200px) scale(1.2);
+      opacity: 0;
+    }
+  }
+  
+  .spinner{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1001;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--secodary-color);
+  
+  }
+  @keyframes drop {
+    0% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(80px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
+  
+  .lava-lamp {
+    position: relative;
+    width: 50px;
+    height: 100px;
+    background: #000;
+    border-radius: 25px;
+    overflow: hidden;
+  }
+  
+  .bubble {
+    position: absolute;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    background: linear-gradient(to bottom, #e64980, #ff8787);
+    border-radius: 50%;
+    left: 15px;
+    animation: drop 5s ease-in-out infinite;
+  }
+  .bubble1 {
+    position: absolute;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    background: linear-gradient(to bottom, #82c91e, #3bc9db);
+    border-radius: 50%;
+    left: 1px;
+    animation: drop 3s ease-in-out infinite;
+  }
+  .bubble2 {
+    position: absolute;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    background: linear-gradient(to bottom, #7950f2, #f783ac);
+    border-radius: 50%;
+    left: 30px;
+    animation: drop 4s ease-in-out infinite;
+  }
+  .bubble3 {
+    position: absolute;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    background: linear-gradient(to bottom, #4481eb, #04befe);
+    border-radius: 50%;
+    left: 20px;
+    animation: drop 6s ease-in-out infinite;
+  }
+
+
+
+  
+.menu-icon{
+    font-size: 2em;
+    margin-right: 5rem;
+    display: none;
+  }
+  .logo a img{
+    max-width: 50%;
+  }
+  .navbar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background-color: rgba(211, 151, 30, 0.075);
+    backdrop-filter: blur(9px);
+  }
+  
+  .navbar.scrolled{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 90%;
+    height: 80px;
+    background-color: wheat;
+    border-radius: 40px;
+    margin-left: 2.2rem;
+    margin-top: 1rem;
+    z-index: 2;
+  }
+  
+  .navbar ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+  }
+  
+  .navbar ul .logo a{
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .navbar ul .menu{
+    display: flex;
+    align-items: center;
+    gap: 2em;
+    margin-right: 20rem;
+  }
+  
+  .navbar.scrolled ul .menu{
+    margin-right: 10rem;
+  }
+  .navbar.scrolled ul{
+    padding: 0 20px;
+  }
+  .menu li{
+    padding: 10px 10px;
+  }
+  
+  .menu li.active{
+    transform: translateY(-10px);
+    border-bottom: 3px solid var(--real-color);
+  }
+  
+  .menu li .active a{
+    color: rgb(255, 255, 255);
+  }
+  
+  .menu li a{
+    color: rgb(255, 255, 255);
+  }
+  img{
+    max-width: 100%;
+  }
+  
+  #close{
+    display: none;
+  }
+  
+  .navbar ul .info{
+    display: flex;
+    align-items: center;
+    gap: 2em;
+  }
+
+
+  .info h3{
+    color: rgb(253, 253, 253);
+  }
+  
+  .info .tips{
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    border: 5px solid var(--real-color);
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 101;
+  }
+  .tips .tip{
+    position: absolute;
+    top: 80px;
+    background-color: var(--real-color);
+    width: 90px;
+    height: 30px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+    transform: translateY(-50%);
+    opacity: 0;
+  }
+  .tips:hover .tip{
+    transform: translateY(0);
+    opacity: 1;
+  }
+  
+  .info .pic{
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+  }
+  .box{
+    opacity: 0;
+    transform: translateY(250px);
+  }
+  .boxy{
+    opacity: 0;
+    transform: translateX(-550px);
+  }
+  .see{
+    opacity: 1;
+    transform: translate(0);
+  }
+  
+  .show{
+    opacity: 1;
+    transform: translate(0);
+  }
+
+
+
+  .container3{
+    width: 75%;
+    height: 350px;
+    border-radius: 10px;
+    background: linear-gradient(to left,rgba(34, 157, 245, 0.388),rgba(255, 167, 3, 0.397));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    margin-top: 7rem;
+    margin-left: 6rem;
+  }
+  
+
+  .container3 h2{
+    font-size: 7rem;
+    color: white;
+  }
+
+  .container3 h2 span{
+    color: var(--primary-color);
+  }
+
+  .container3 .btns5{
+    margin-top: 2em;
+  }
+
+  .btns5 a{
+    padding: 15px 40px;
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 10px;
+    color:white;
+  }
+
+  .btns5 a:hover{
+    background-color: var(--secodary-color);
+    color: black;
+  }
+
+
+  .all2{
+    position: absolute;
+    left: 0;
+    top: 0%;
+    width: 100%;
+    height:200vh;
+    background-color: transparent;
+    display: none;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+  .all2 .circle{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 2px solid var(--primary-color);
+    top: 65%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 2rem;
+  }
+
+  .tipers{
+    position: absolute;
+    top: 200%;
+    width: 100%;
+    height: 300vh;
+    background-color: rgba(0, 0, 0, 0.799);
+  }
+
+
+.tipers .tips_main{
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  padding: 20px 20px;
+}
+
+
+.tips_main .tips_content{
+  width: 80%;
+  height: 420px;
+  border: 2px solid var(--primary-color);
+  border-radius: 10px;
+  padding: 10px 10px;
+  cursor: pointer;
+}
+
+.tips_content .pic2{
+  width: 100%;
+  height: 280px;
+  border-radius: 10px;
+  border: 2px solid var(--real-color);
+  overflow: hidden;
+  position: relative;
+}
+
+
+
+
+.tips_content .badge{
+  padding: 10px 30px;
+  border-radius: 20px;
+  background-color: var(--secodary-color);
+  color: black;
+  width: 130px;
+  margin-top: 0.6rem;
+  margin-left: 7rem;
+}
+
+.tips_content .views{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.views h4{
+  color: white;
+}
+.views p{
+  color: #04befe;
+}
+
+.tips_content .codes{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  backdrop-filter: blur(9px);
+  z-index: 2;
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.codes .code{
+  width: 40%;
+  height: 400px;
+  background-color: rgb(29, 29, 29);
+  border-radius: 10px;
+  overflow-y: auto;
+}
+video{
+  max-width: 100%;
+}
+.code header{
+  position: fixed;
+  display: flex;
+  align-items: center;
+}
+
+header li{
+  padding: 10px 35px;
+  background-color: black;
+}
+
+header li.active{
+  background-color: var(--secodary-color);
+}
+
+header li.active a{
+  color: black;
+}
+header li a{
+  color: white;
+}
+
+.codes .remove{
+  position: absolute;
+  top: 10px;
+  right: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-left: 14rem;
+  z-index: 3;
+}
+
+.remove i{
+  font-size: 5rem;
+  color: white;
+}
+
+
+.coder{
+  width: 100%;
+  height: 100vh;
+  overflow-y: auto;
+}
+
+.code::-webkit-scrollbar{
+  width: .50rem;
+  height: 30rem;
+}
+.code::-webkit-scrollbar-thumb{
+  background: linear-gradient(90deg, #5c67ff, #ad51ff);
+  border-radius: 10px;
+}
+.code::-webkit-scrollbar-track{
+  border-radius: 10px;
+  background: linear-gradient(10deg, #ffffff, #ffffff);
+}
+
+.coder .html{
+  margin-top: 5rem;
+  color: white;
+  font-size: 20em;
+}

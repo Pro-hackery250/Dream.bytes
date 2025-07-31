@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<style>
+    /* Custom CSS for the counter */
+body {
+    font-family: 'Inter', sans-serif; /* Apply Inter font */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Ensure body takes full viewport height */
+    background-color: #f3f4f6; /* bg-gray-100 */
+    padding: 1rem; /* p-4 */
+    margin: 0; /* Remove default body margin */
+    overflow: hidden; /* Prevent scrollbars if content slightly overflows */
+}
+
+.counter-container {
+    background-color: #ffffff; /* bg-white */
+    padding: 3rem; /* p-12 */
+    border-radius: 0.75rem; /* rounded-xl */
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); /* shadow-lg */
+    text-align: center;
+    max-width: 24rem; /* max-w-sm */
+    width: 100%; /* w-full */
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+.percentage {
+    font-size: 4rem; /* text-6xl */
+    font-weight: 700; /* font-bold */
+    color: #2563eb; /* text-blue-600 */
+    margin-bottom: 1rem; /* mb-4 */
+}
+
+/* Styles for when the counter completes */
+.percentage.text-green-600 {
+    color: #16a34a; /* A green color for completion */
+}
+
+.loading-text {
+    color: #4b5563; /* text-gray-600 */
+    font-size: 1.125rem; /* text-lg */
+}
+
+</style>
+<body>
+        <!-- Main container for the counter -->
+    <div class="counter-container">
+        <!-- Display element for the percentage -->
+        <div id="percentage" class="percentage">0%</div>
+        <!-- Optional text below the counter -->
+        <p class="loading-text">Loading progress...</p>
+    </div>
+
+    <script>
+        // JavaScript code for the counter functionality
+        document.addEventListener('DOMContentLoaded', () => {
+            // Get the HTML element where the percentage will be displayed
+            const percentageDisplay = document.getElementById('percentage');
+            let count = 0; // Initialize the counter value
+            const intervalTime = 40; // Time in milliseconds for each increment (determines speed)
+
+            /**
+             * Function to update the counter display.
+             * It increments the count and updates the text content until 100% is reached.
+             */
+            function updateCounter() {
+                if (count <= 100) {
+                    // Update the text content with the current count and a '%' sign
+                    percentageDisplay.textContent = count + '%';
+                    count++; // Increment the count for the next update
+                } else {
+                    // Once 100% is reached, stop the interval to prevent further execution
+                    clearInterval(counterInterval);
+                    // Optional: Change text or add a completion message
+                    percentageDisplay.textContent = '100% Complete!';
+                    percentageDisplay.classList.remove('text-blue-600'); // Remove blue color
+                    percentageDisplay.classList.add('text-green-600'); // Add green color for completion
+                }
+            }
+
+            // Set up an interval to call the updateCounter function repeatedly
+            // This creates the animation effect of the counter
+            const counterInterval = setInterval(updateCounter, intervalTime);
+        });
+    </script>
+</body>
+</html>

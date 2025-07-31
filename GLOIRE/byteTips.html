@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bytesTips.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+    <div class="custom-cursor"></div>
+    <div class="container"></div>
+    <div class="all">
+        <div class="navbar" id="nav">
+            <ul>
+                <div class="logo"><a href="#"><img src="images/my logo1.png" alt=""></a></div>
+                <div class="menu" id="menu">
+                    <li class="links active"><a href="#home">Home</a></li>
+                    <li class="links"><a href="#service">Work</a></li>
+                    <li class="links"><a href="#blog">Blog</a></li>
+                    <li class="links"><a href="#">contact</a></li>
+                </div>
+                <div class="menu-icon" id="menu-icon">
+                    <i class="fas fa-bars-staggered" onclick="togglebar()" id="open"></i>
+                    <i class="fas fa-times" onclick="untogglebar()" id="close"></i>
+                </div>
+                <div class="info">
+                    <h3 style="display: flex; align-items: center; gap: 0.4em;" id="select">MG <i class="fas fa-angle-down"></i></h3>
+                    <div class="tips">
+                        <div class="pic"><img src="images/IMG-20241225-WA0021.jpg" alt=""></div>
+                        <div class="tip">New tips</div>
+                    </div>
+                </div>
+            </ul>
+        </div>
+        <div class="container3">
+            <h2>Bytes <span>Tips</span></h2>
+            <div class="btns5"><a href="#tiper" id="explore">Explore now</a></div>
+        </div>
+    </div>
+    <div class="all2" id="count">
+        <div class="circle">
+            <div id="percentage" class="percentage">0%</div>
+        </div>
+    </div>
+    <div class="tipers hidden" id="tiper">
+        <div class="tips_main">
+            <div class="tips_content" id="tipcont">
+                <div class="pic2" id="pic"><img src="" alt=""></div>
+                <div class="badge">Loading</div>
+                <div class="views">
+                    <h4>0 views</h4>
+                    <p>4 hours ago</p>
+                </div>
+                <div class="codes" id="codes">
+                    <a class="remove"><i class="fa fa-times" id="remove"></i></a>
+                    <div class="code">
+                        <header>
+                            <li class="codelink active"><a href="#"><i class=""></i>HTML</a></li>
+                            <li class="codelink"><a href="#"><i class=""></i>CSS</a></li>
+                            <li class="codelink"><a href="#"><i class=""></i>JS</a></li>
+                        </header>
+                        <div class="coder">
+                            <div class="html">
+                            </div>
+                            <div class="css"></div>
+                            <div class="js"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tips_content" id="tipcont2">
+                <div class="pic2"><img src="byteimages/Icône de chargement _ Vecteur Premium.jfif" alt=""></div>
+                <div class="badge">Typewritter</div>
+                <div class="views">
+                    <h4>0 views</h4>
+                    <p>22 hours ago</p>
+                </div>
+                <div class="codes" id="codes2">
+                    <a class="remove"><i class="fa fa-times" id="remove2"></i></a>
+                    <div class="code">
+                        <header>
+                            <li class="codelink active"><a href="#"><i class=""></i>HTML</a></li>
+                            <li class="codelink"><a href="#"><i class=""></i>CSS</a></li>
+                            <li class="codelink"><a href="#"><i class=""></i>JS</a></li>
+                        </header>
+                        <div class="coder">
+                            <div class="html"></div>
+                            <div class="css"></div>
+                            <div class="js"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="bytesTips.js"></script>
+</body>
+</html>
